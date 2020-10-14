@@ -53,7 +53,6 @@ function randomize(correct,incorrect)
     }
     
     var ran = random(0,largo);
-    console.log("cambios by pancho");
     if((qtype !='boolean'))
        {  
     for (var i=0;i<4;i++)
