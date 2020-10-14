@@ -1,6 +1,6 @@
 
 export function getCategories() {
-   
+
     const questionsQuantity = document.getElementById('questions-number').value
     fetch(`https://opentdb.com/api_category.php`)
         .then(response => response.json())
