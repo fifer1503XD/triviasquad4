@@ -1,6 +1,5 @@
 
 export function getCategories() {
-    alert('funciona el import')
     const questionsQuantity = document.getElementById('questions-number').value
     fetch(`https://opentdb.com/api_category.php`)
         .then(response => response.json())
