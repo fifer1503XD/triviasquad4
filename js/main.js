@@ -45,8 +45,14 @@ function randomize(correct,incorrect)
     let arrpre=[];
     var inco=0;
     var ran = Math.floor(Math.random()*3)+0;
+    var largo=0;
+    while (incorrect[largo]!=undefined) {
+        largo ++;
+      
+    }
     
     var ran = random(0,largo);
+    console.log("cambios by pancho");
     if((qtype !='boolean'))
        {  
     for (var i=0;i<4;i++)
