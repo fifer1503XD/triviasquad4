@@ -46,16 +46,10 @@ function randomize(correct,incorrect)
     var inco=0;
     var ran = Math.floor(Math.random()*3)+0;
     
-    
-    var largo=0;
-    while (incorrect[largo]!=undefined) {
-        largo ++;
-      
-    }
     var ran = random(0,largo);
     if((qtype !='boolean'))
        {  
-    for (var i=0;i<largo;i++)
+    for (var i=0;i<4;i++)
         {
             
             if(i==ran)
