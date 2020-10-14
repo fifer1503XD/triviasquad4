@@ -32,7 +32,8 @@ function returnCardHTML(q,index) {
                     <div class="card-body">
                     <h5 class="card-title">${q.category}</h5>
                     <h6 class="card-subtitle mb-2 text-muted">${q.question}</h6>
-                        ${returnAnswersHTML(randomize(q.correct_answer, q.incorrect_answers),index)}           
+                        ${returnAnswersHTML(randomize(q.correct_answer, q.incorrect_answers),index)}   
+                                
                     </div>
                 </div>`
     return card
@@ -101,9 +102,10 @@ function randomize(correct,incorrect)
 return arrpre;
 }
 
-function returnAnswersHTML(arr, incorrects,ind) {
+function returnAnswersHTML(arr,ind) {
     
     let incorrectHTML = '';
+
     arr.forEach((arr,index) => {
         incorrectHTML += `  <div>
                             <div class="form-check">
