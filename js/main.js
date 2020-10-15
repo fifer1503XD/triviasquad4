@@ -109,7 +109,7 @@ function returnAnswersHTML(arr,ind) {
     arr.forEach((arr,index) => {
         incorrectHTML += `  <div>
                             <div class="form-check">
-                            <input class="form-check-input" type="radio" name="answer-${ind}" id="answer-${index}${ind}" value="${index}${ind}">
+                            <input class="form-check-input" type="radio" name="answer-${ind}" id="answer-${index}${ind}" value="${index}${ind}" required>
                             <label class="form-check-label" for="answer-${index}${ind}">
                             ${arr}
                             </label>
