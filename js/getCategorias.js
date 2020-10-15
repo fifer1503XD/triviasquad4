@@ -13,6 +13,6 @@ function Categories(data){
         const Category = `<option id"${data.id}" value="${data.id}">${data.name}</option>`
         categories.innerHTML += Category;
     })
-    console.log(data)
+    
 }
 
