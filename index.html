@@ -47,12 +47,12 @@
         </div>
         <!-- Aquí van las tarjetas -->
         <div>
-        <form onsubmit="" action="" method="POST" target="_blank">
+        <form onsubmit="event.preventDefault(),validarRespuesta()" method="POST" action="" >
           <div id="container-cards">
 
         </div>
         <button type="button" onclick="cargar()" class="btn btn-primary">Carga</button>
-        <button type="submit" onsubmit="event.preventDefault(), validarRespuesta()"  class="btn btn-primary">Submit</button>
+        <button type="submit"  class="btn btn-primary">Enviar Respuestas</button>
         </form>
         <div class="containter" id="t-resultados" >
 
