@@ -151,7 +151,7 @@ function validarRespuesta() {
         while(k<4)
         {
             answ = document.getElementById(`answer-${k}${s}`);   
-           
+            console.log(" valor del select en un boolean  "+ answ.checked);
             if(answ.checked==true)
             {
              resultado.push(answ.value);
