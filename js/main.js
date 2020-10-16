@@ -177,11 +177,11 @@ function validarRespuesta() {
          console.log("el resultado es   "+sumaresult);       
             
 
-    // tresults.innerHTML = `
-    //      <h3>Estos son los resultados:</h3><br>
-    //      <h3>Tiene ${sumaresult} respuestas correctas</h3><br>
-    //      <h3>Tiene ${10 - sumaresult} respuestas incorrectas</h3><br>
-    //      `;
+    tresults.innerHTML = `
+    <h3>Estos son los resultados:</h3><br>
+          <h3>Tiene ${sumaresult} respuestas correctas</h3><br>
+          <h3>Tiene ${cant - sumaresult} respuestas incorrectas</h3><br>
+     `;
 }
 
 getCategories()
