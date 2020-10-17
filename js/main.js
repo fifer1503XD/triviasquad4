@@ -8,7 +8,7 @@ let arrayTypeQuestion=[]
     const questionType= document.getElementById('type').value
     console.log(questionsQuantity+questionsCategory,questionsDifficulty,questionType)
     getQuestions(questionsQuantity,questionsCategory,questionsDifficulty,questionType);
-    cuenta()
+
     return questionsQuantity,questionsCategory,questionsDifficulty,questionType
     
 }
