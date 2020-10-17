@@ -1,6 +1,6 @@
 
 getCategories()
-function carga()
+function cargar()
 {
     getValuesQuestion()
 }
