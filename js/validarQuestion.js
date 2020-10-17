@@ -5,21 +5,19 @@ export function typequestion(questions){
     arrayTypeQuestion=[]
     questions.forEach((question)=>{
     arrayTypeQuestion.push(question.type) 
-    alert(arrayTypeQuestion)         
+           
     })
 }
 export function correctAnswer(questions){
     corr=[]
     questions.forEach((question)=>{
     corr.push(question.correct_answer) 
-    alert(corr)         
+       
     })
 }
 
 export function validarRespuesta() {
-    alert(arrayTypeQuestion)
-    alert(corr)
-
+    
     let respchecked = false
     let respvalue = 0
     let sumaresult = 0
