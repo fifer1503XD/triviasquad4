@@ -4,20 +4,17 @@ let corr
 export function typequestion(questions){
     arrayTypeQuestion=[]
     questions.forEach((question)=>{
-    arrayTypeQuestion.push(question.type) 
-           
+    arrayTypeQuestion.push(question.type)         
     })
 }
 export function correctAnswer(questions){
     corr=[]
     questions.forEach((question)=>{
-    corr.push(question.correct_answer) 
-       
+    corr.push(question.correct_answer)  
     })
 }
 
 export function validarRespuesta() {
-    
     let respchecked = false
     let respvalue = 0
     let sumaresult = 0
@@ -63,7 +60,7 @@ export function validarRespuesta() {
             }
                 }
     }
-    alert(resultado)
+    
         console.log("array de resultados   " +resultado);
         for( var j=0; j<resultado.length;j++)
                 { 
@@ -80,8 +77,18 @@ export function validarRespuesta() {
 
          console.log("el resultado es   "+sumaresult);
 
-
+         eraseCards()
     tresults.innerHTML = `
     <h3>Estos son los resultados:</h3><br>
           <h3>Tiene ${sumaresult} respuestas correctas</h3><br>
           <h3>Tiene ${cant - sumaresult} respuestas incorrectas</h3><br>`}
+
+         function eraseCards() {
+            const container = document.getElementById('container-cards');
+            container.innerHTML = '';
+         }
+         
+        export function eraseResults() {
+            const tresults = document.getElementById('t-resultados');
+            tresults.innerHTML = '';
+        }      

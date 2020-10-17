@@ -1,8 +1,9 @@
-
+import { eraseResults} from './validarQuestion.js'
 export let corr=[]
 
 
 export function printCards(questions) {
+    eraseResults();
     const container = document.getElementById('container-cards');
 container.innerHTML = '';
 questions.forEach((question,index) => {
@@ -12,13 +13,17 @@ questions.forEach((question,index) => {
 }
     
 function returnCardHTML(q,index) {
-    const card = `<div class="card">
-                    <div class="card-body">
-                    <h5 class="card-title">${q.category}</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">${q.question}</h6>
-                        ${returnAnswersHTML(q.correct_answer, q.incorrect_answers,index)}           
-                    </div>
-                </div>`
+    
+    const card = ` <div class ="col-4">
+    <div class="card border-primary mb-3">
+    <div class="card-body" style="height:235px">
+    <h5 class="card-title">${q.category}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">${q.question}</h6>
+        ${returnAnswersHTML(q.correct_answer, q.incorrect_answers,index)}           
+    </div>
+   </div>
+   </div>
+`
     return card
 }
 
