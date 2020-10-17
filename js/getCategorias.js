@@ -1,6 +1,5 @@
 
 export function getCategories() {
-
     const questionsQuantity = document.getElementById('questions-number').value
     fetch(`https://opentdb.com/api_category.php`)
         .then(response => response.json())
@@ -13,6 +12,6 @@ function Categories(data){
         const Category = `<option id"${data.id}" value="${data.id}">${data.name}</option>`
         categories.innerHTML += Category;
     })
-    
+    console.log(data)
 }
 
